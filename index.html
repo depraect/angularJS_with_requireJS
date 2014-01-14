@@ -1,0 +1,67 @@
+<!DOCTYPE html >
+<html lang="es" >
+
+<head>
+    <meta charset="utf-8">
+    <title>Angular con RequireJS </title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/custom.css" />
+    <script  type="text/javascript" data-main="scripts/main" src="scripts/libs/require.js"></script>
+</head>
+
+<body  >
+
+
+
+
+<div style="min-width: 1048px"  >
+
+    <div class="navbar  navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="brand" href="index.html">App</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+        <div class="span3">
+            <div class="sidebar">
+                <div class="bs-docs-sidebar">
+                    <ul class="nav nav-list bs-docs-sidenav affix-top">
+                        <li><a ng-href="#/opcion1">opccion 1<i class="icon-chevron-right"></i></a></li>
+                        <li><a ng-href="#/opcion2">opccion 2<i class="icon-chevron-right"></i></a></li>
+                        <li><a ng-href="#/opcion3">opccion 3<i class="icon-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="span9">
+            <div ng-controller="rootCtrl">
+                <div butterbar>Cargando...</div>
+                <div errorBar class="alert alert-error" ng-show="error">
+                    <a ng-click="hideError()" class="close" data-dismiss="alert" >&times;</a>
+                    <img src="assets/images/error.png" />
+                    <strong>Error: </strong><span ng-bind="error"></span>
+                </div>
+            </div>
+            <div ng-view></div>
+        </div>
+    </div>
+
+    <hr />
+    <p style="text-align: center">Edgar Godoy Depraect</p>
+</div>
+
+</div>
+
+
+</body>
+</html>
