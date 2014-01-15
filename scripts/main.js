@@ -1,13 +1,13 @@
 require.config({
     paths:{
-         angular        : 'libs/angular.min'
-        ,domReady       : 'libs/domReady'
-        ,angularResource : 'libs/angular-resource.min'
-        ,angularRoute   : 'libs/angular-route.min'
-        ,angularLocale  : 'libs/angular-locale_es-mx'
-        ,jQuery         : 'libs/jquery-2.0.2.min'
-        ,uiTemplates    : 'libs/ui-bootstrap/ui-bootstrap-custom-tpls-0.6.0.min'
-        ,uiBootstrap    : 'libs/ui-bootstrap/ui-bootstrap-custom-0.6.0.min'
+         angular        : 'bower_components/angular/angular.min'
+        ,domReady       : 'bower_components/requirejs-domready/domReady'
+        ,angularResource : 'bower_components/angular-resource/angular-resource.min'
+        ,angularRoute   : 'bower_components/angular-route/angular-route.min'
+        ,angularLocale  : 'bower_components/angular-i18n/angular-locale_es-mx'
+        ,jQuery         : 'bower_components/jquery/jquery.min'
+        ,uiTemplates    : 'bower_components/angular-bootstrap/ui-bootstrap-tpls.min'
+        ,uiBootstrap    : 'bower_components/angular-bootstrap/ui-bootstrap.min'
         ,shortcut       : 'libs/OpenJS-shortcut'
     }
     ,shim :{
